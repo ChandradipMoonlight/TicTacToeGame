@@ -3,8 +3,6 @@ package workshop1;
 import java.util.Scanner;
 
 public class TicTacToeGame {
-	
-	
 	public static char[] createBoard() {
 		char[] board = new char[10];
 	
@@ -20,8 +18,6 @@ public class TicTacToeGame {
 			Scanner sc = new Scanner(System.in);
 			System.out.print("give the  option 'o' or 'x' : ");
 			char option = sc.next().charAt(0);
-			
-		
 			if ( option=='o') {
 				computersSymbol='x';
 			} else if (option=='x'){
@@ -30,7 +26,6 @@ public class TicTacToeGame {
 				System.out.print("invalied option: ");
 			}
 			System.out.println("Players option : "+ option+"\nand computers option is : "+computersSymbol);
-	
 	}
 		
 		public static void displayBoard() {
@@ -46,11 +41,8 @@ public class TicTacToeGame {
 				}
 			}
 		}
-
-	
 	public static void main(String[] args) {	
 	System.out.println("Welcome to the TicTacGame");
-	
 	chooseOption();
 	displayBoard();
 	}
