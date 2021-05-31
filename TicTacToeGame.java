@@ -3,6 +3,7 @@ package workshop1;
 import java.util.Scanner;
 
 public class TicTacToeGame {
+	// Method to reset Board
 	public static char[] createBoard() {
 		char[] board = new char[10];
 	
@@ -11,6 +12,7 @@ public class TicTacToeGame {
 		}
 		return board;
 	}
+	// Method to allow choose option.
 		public static void chooseOption () {
 		
 			char computersSymbol = 0;
@@ -27,7 +29,7 @@ public class TicTacToeGame {
 			}
 			System.out.println("Players option : "+ option+"\nand computers option is : "+computersSymbol);
 	}
-		
+	// Method to Display the Board	
 		public static void displayBoard() {
 			char[] board = createBoard();
 			System.out.print("\n+---+---+---+\n|");
